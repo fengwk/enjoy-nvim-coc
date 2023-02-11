@@ -1,0 +1,25 @@
+{
+    // https://github.com/neoclide/coc-java#supported-settings
+    "java.jdt.ls.java.home": "/usr/lib/jvm/java-17-openjdk",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-1.8",
+            "path": "/usr/lib/jvm/java-8-jdk",
+            "default": true
+        },
+        {
+            "name": "JavaSE-11",
+            "path": "/usr/lib/jvm/java-11-openjdk"
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "/usr/lib/jvm/java-17-openjdk"
+        }
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx1G -Xms100m -Xlog:disable -javaagent:/home/fengwk/.config/nvim/lib/lombok.jar",
+    "java.configuration.maven.userSettings": "/home/fengwk/.m2/settings.xml",
+    "java.configuration.maven.globalSettings": "/opt/maven/conf/settings.xml",
+    "java.maven.downloadSources": true,
+    "java.maven.updateSnapshots": true,
+    "java.referencesCodeLens.enabled": true
+}
